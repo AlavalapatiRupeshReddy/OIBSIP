@@ -1,28 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-image: url("task.jpg");
+}
 
-.Display
-{
-    width:290px;
-    height:80px;
-    padding:0px;
-    background-color:grey;
-    font-weight: bold;
-} 
-.elements
-{   
-    padding-top: 2px;
-    padding-right:2px;
-     padding-bottom:2px;
-     padding-left: 2px;
+.container {
+  max-width: 500px;
+  margin: 0 auto;
 }
-.num
-{
-    width:70px;
-    height:48px;
-    background-color: aqua;
+
+h1 {
+  text-align: center;
 }
-.ch
-{
-    width:70px;
-    height:48px;
-    background-color: aqua;
+
+form {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.lists {
+  display: flex;
+}
+
+.list {
+  flex: 1;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  
+}
+
+li {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.actions {
+  margin-left: auto;
+}
+
+.delete-btn {
+  margin-left: 5px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 2px 5px;
+  cursor: pointer;
 }
